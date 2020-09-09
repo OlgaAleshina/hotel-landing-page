@@ -1,0 +1,55 @@
+.colors-types-section {
+  display: flex;
+}
+
+//color box item
+.color-box {
+  display: flex;
+}
+
+.color-box__box {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+}
+.color-box__description {
+  font-family: Quicksand;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 29px;
+  color: $dark_shade;
+}
+.color-box_box__100 {
+  background: $dark_shade;
+}
+
+.color-box_box__75 {
+  background: $dark_shade_75;
+}
+
+.color-box_box__50 {
+  background: $dark_shade_50;
+}
+
+.color-box_box__25 {
+  background: $dark_shade_25;
+}
+.color-box_box__5 {
+  background: $dark_shade_5;
+}
+.color-box_box__purple {
+  background: $purple;
+}
+.color-box_box__green {
+  background: $green;
+}
+
+.type-box {
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+.type-box__title {
+  font-weight: normal;
+  font-family: Montserrat;
+  color: $dark_shade_75;
+}

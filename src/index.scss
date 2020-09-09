@@ -3,9 +3,10 @@
 //@use "./common.blocks/colors-types/colors-types.scss";
 //@use "./common.blocks/form-elements/form-elements-section.scss";
 
-@import "components/typography.scss";
-@import "components/colors.scss";
-
+@import "components/typography";
+@import "components/colors";
+@import "components/grid";
+@import "components/color-types/color-types.scss";
 // _normalize.scss
 body,
 html {
