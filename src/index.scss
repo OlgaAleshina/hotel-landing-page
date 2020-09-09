@@ -1,0 +1,20 @@
+//@use "grid";
+//@use "typography";
+//@use "./common.blocks/colors-types/colors-types.scss";
+//@use "./common.blocks/form-elements/form-elements-section.scss";
+
+@import "components/colors.scss";
+
+// _normalize.scss
+body,
+html {
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+content {
+  display: block;
+}
