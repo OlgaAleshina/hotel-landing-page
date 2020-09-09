@@ -3,12 +3,13 @@
 //@use "./common.blocks/colors-types/colors-types.scss";
 //@use "./common.blocks/form-elements/form-elements-section.scss";
 
+@import "components/typography.scss";
 @import "components/colors.scss";
 
 // _normalize.scss
 body,
 html {
-  background-color: $white;
+  background-color: $grey;
   margin: 0;
   padding: 0;
 }

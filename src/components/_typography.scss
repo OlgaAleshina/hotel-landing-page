@@ -1,0 +1,126 @@
+@use "colors.scss" as *;
+
+@font-face {
+  font-family: "Conv_Montserrat-Regular";
+  src: url("/src/assets/fonts/Montserrat-Regular/Montserrat-Regular.eot");
+  src: local("☺"),
+    url("/src/assets/fonts/Montserrat-Regular/Montserrat-Regular.woff")
+      format("woff"),
+    url("/src/assets/fonts/Montserrat-Regular/Montserrat-Regular.ttf")
+      format("truetype"),
+    url("/src/assets/fonts/Montserrat-Regular/Montserrat-Regular.svg")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Conv_Quicksand-Regular";
+  src: url("/src/assets/fonts/Quicksand-Regular/Quicksand-Regular.eot");
+  src: local("☺"),
+    url("/src/assets/fonts/Quicksand-Regular/Quicksand-Regular.woff")
+      format("woff"),
+    url("/src/assets/fonts/Quicksand-Regular/Quicksand-Regular.ttf")
+      format("truetype"),
+    url("/src/assets/fonts/Quicksand-Regular/Quicksand-Regular.svg")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/assets/fonts/material-design-icons/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("/src/assets/fonts/material-design-icons/MaterialIcons-Regular"),
+    local("/src/assets/fonts/material-design-icons/MaterialIcons-Regular"),
+    url(/src/assets/fonts/material-design-icons/MaterialIcons-Regular.woff2)
+      format("woff2"),
+    url(/src/assets/fonts/material-design-icons/MaterialIcons-Regular.woff)
+      format("woff"),
+    url(/src/assets/fonts/material-design-icons/MaterialIcons-Regular.ttf)
+      format("truetype");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+/*@font-face {
+  font-family: "Quicksand";
+  src: url('/assets/fonts/Quicksand.ttf'); 
+       
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url('/assets/fonts/Montserrat-Regular.ttf)');  
+       
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url('/assets/fonts/OpenSans.ttf)');  
+       
+}
+*/
+
+.h1 {
+  font-family: Conv_Quicksand-Regular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.h2 {
+  font-family: Conv_Quicksand-Regular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+
+  /* Dark 100% */
+
+  color: $dark_shade;
+}
+
+.h3 {
+  font-family: Conv_Montserrat-Regular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: $dark_shade;
+}
+body {
+  font-family: Conv_Montserrat-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  color: $dark_shade_75;
+}
