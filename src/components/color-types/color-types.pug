@@ -1,16 +1,14 @@
 
-block color-types
+- const colorBoxes = [{ style: 'color-box_box__100', title: 'Dark Shade 100%', color: '#1F2041' }, { style: 'color-box_box__75', title: 'Dark Shade 75%', color: '#1F2041' }, { style: 'color-box_box__50', title: 'Dark Shade 50%', color: '#1F2041' }, { style: 'color-box_box__25', title: 'Dark Shade 25%', color: '#1F2041' }, { style: 'color-box_box__5', title: 'Dark Shade 5%', color: '#1F2041' }, { style: 'color-box_box__purple', title: 'Purple', color: '#bc9cff' }, { style: 'color-box_box__green', title: 'Green', color: '#6fcf97' }];
+- const typeBoxes =[{title:"h1", description:"This one is the sub-section or widget title"}, {title:"h2", description:"Next one is the item title inside widgets"}, {title:"h3", description:"this is a label or CTA text"}, {title:"body", description:"This is a body text which is used for most of design, like paragraphs, lists, etc."}]
 
-- var colorBoxes = [{ style: 'color-box_box__100', title: 'Dark Shade 100%', color: '#1F2041' }, { style: 'color-box_box__75', title: 'Dark Shade 75%', color: '#1F2041' }, { style: 'color-box_box__50', title: 'Dark Shade 50%', color: '#1F2041' }, { style: 'color-box_box__25', title: 'Dark Shade 25%', color: '#1F2041' }, { style: 'color-box_box__5', title: 'Dark Shade 5%', color: '#1F2041' }, { style: 'color-box_box__purple', title: 'Purple', color: '#bc9cff' }, { style: 'color-box_box__green', title: 'Green', color: '#6fcf97' }];
-- var typeBoxes =[{title:"h1", description:"This one is the sub-section or widget title"}, {title:"h2", description:"Next one is the item title inside widgets"}, {title:"h3", description:"this is a label or CTA text"}, {title:"body", description:"This is a body text which is used for most of design, like paragraphs, lists, etc."}]
-
-section.col-12.colors-types-section
-  article.col-6
+section.elements-section
+  article
     each color in colorBoxes
       .color-box
         figure(class=`color-box__box + ${color.style}`)
         p.color-box__description <strong> #{color.title}</strong><br/> #{color.color}
-  article.col-6
+  article
     each type in typeBoxes
       div.type-box
         p(class=`type-box__title + ${type.title}`) #{type.title}

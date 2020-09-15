@@ -51,3 +51,6 @@ Deployed on Githubpages
 - [figma](https://www.figma.com/) - online design tool
 - [pixelPerfect] - google chrome extension
 - [font2web](http://www.font2web.com/) - online fonts converter
+
+- outline of inputs (defaul, onhover)
+- format calendar in input

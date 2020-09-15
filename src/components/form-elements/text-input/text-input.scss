@@ -1,0 +1,95 @@
+.text-input {
+  max-width: 320px;
+  width: 90%;
+
+  &__label {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label_mute {
+    color: $dark_shade_50;
+  }
+
+  &__inner {
+    width: 100%;
+    height: 44px;
+    background: $white;
+    border: 1px solid $dark_shade_25;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  &__inner::placeholder {
+    color: $dark_shade_25;
+    font-family: "Conv_Montserrat-Regular";
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__inner[name="focused-input"]::placeholder {
+    color: $dark_shade_75;
+  }
+
+  &__inner[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+  &__inner[type="date"]::-webkit-datetime-edit {
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    color: $dark_shade_25;
+    text-transform: uppercase;
+  }
+}
+
+.text-input:onfocus {
+  //outline: none;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.no-border {
+  border-right: hidden;
+  border-radius: 4px 0px 0px 4px;
+}
+.input-button {
+  display: flex;
+
+  &_arrow {
+    border: 1px solid $dark_shade_25;
+    box-sizing: border-box;
+    background: $white;
+    border-left-style: hidden;
+    border-radius: 0px 4px 4px 0px;
+  }
+}
+.material-icons_arrow {
+  background: linear-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#bc9cff),
+    to(#8ba4f9)
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#bc9cff),
+    to(#8ba4f9)
+  );
+  background: -moz-linear-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#bc9cff),
+    to(#8ba4f9)
+  );
+  //180deg, #bc9cff 0%, #8ba4f9 100%
+
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

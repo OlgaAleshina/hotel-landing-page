@@ -1,0 +1,12 @@
+mixin text-input(labelLeft, labelRight, name, type, placeholder)
+  div.text-input
+          div.text-input__label
+            label.h3 #{labelLeft}
+            label.h3.text-input__label_mute #{labelRight}
+          input(type= type name= name class="text-input__inner" placeholder= placeholder)
+
+
++text-input("text-field", "default", "default-input", "e-mail", "Email") 
++text-input("text-field", "hoover/focus", "focused-input", "text", "This is pretty awesome")
++text-input("masked text field", "default", "" , "date", "")
+        

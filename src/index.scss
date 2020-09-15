@@ -7,16 +7,19 @@
 @import "components/colors";
 @import "components/grid";
 @import "components/color-types/color-types.scss";
+@import "components/form-elements/text-input/text-input.scss";
 // _normalize.scss
 body,
 html {
-  background-color: $grey;
+  background-color: $white;
   margin: 0;
-  padding: 0;
+  padding: 1em;
+  font-family: Conv_Quicksand-Regular;
 }
 * {
   box-sizing: border-box;
 }
 content {
   display: block;
+  padding: 1rem;
 }
