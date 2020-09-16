@@ -1,3 +1,9 @@
 section.elements-section
     article
         include text-input/text-input
+        include dropdown/dropdown
+        +text-input("text-field", "default", "default-input", "e-mail", "Email") 
+        +text-input("text-field", "hoover/focus", "focused-input", "text", "This is pretty awesome")
+        +dropdown(" ", "сколько гостей")
+        +text-input("masked text field", "default", "" , "date", "")
+        include date-dropdown/date-dropdown

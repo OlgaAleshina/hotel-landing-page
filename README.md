@@ -49,8 +49,10 @@ Deployed on Githubpages
 - [jQuery](https://jquery.com/) - JavaScript library
 - [webpack](https://webpack.js.org/) - static module bundler for JavaScript applications
 - [figma](https://www.figma.com/) - online design tool
-- [pixelPerfect] - google chrome extension
+- [pixelPerfect]() - google chrome extension
 - [font2web](http://www.font2web.com/) - online fonts converter
+- [item-quantity-dropdown](https://www.npmjs.com/package/item-quantity-dropdown) - Dropdown menu to select items with quantities
 
 - outline of inputs (defaul, onhover)
 - format calendar in input
+- change px to rems

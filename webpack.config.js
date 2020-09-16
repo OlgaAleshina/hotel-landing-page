@@ -5,7 +5,7 @@ const webpack = require("webpack");
 
 const config = {
   entry: {
-    app: ["./src/index.js", "./src/test.js"]
+    app: ["./src/index.js"]
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -20,8 +20,17 @@ const config = {
     }),
     new miniCss({
       filename: "style.css"
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
     })
   ],
+  resolve: {
+    alias: {
+      node_modules: path.resolve(__dirname, "node_modules")
+    }
+  },
   module: {
     rules: [
       {
