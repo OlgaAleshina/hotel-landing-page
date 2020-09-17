@@ -1,0 +1,125 @@
+@use 'node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.css';
+@use "node_modules/air-datepicker/dist/css/datepicker.min.css";
+
+.input {
+  max-width: 320px;
+  width: 100%;
+  height: 44px;
+  background: $white;
+  border: 1px solid $dark_shade_25;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.input::placeholder {
+  padding: 0.25rem;
+  color: $dark_shade_25;
+  font-family: "Conv_Montserrat-Regular";
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.input::placeholder:focus {
+  color: $dark_shade_50;
+  font-family: "Conv_Montserrat-Regular";
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.input[name="focused-input"] {
+  border: 1px solid $dark_shade_50;
+}
+
+.input[name="focused-input"]::placeholder {
+  color: $dark_shade_75;
+}
+
+.input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.input[type="date"]::-webkit-datetime-edit {
+  padding: 0.25rem;
+  font-family: "Conv_Montserrat-Regular";
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  color: $dark_shade_25;
+  text-transform: uppercase;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid $dark_shade_50;
+}
+.input:hover {
+  outline: none;
+  border: 1px solid $dark_shade_50;
+}
+.no-border {
+  border-right: hidden;
+  border-radius: 4px 0px 0px 4px;
+}
+.input-button {
+  display: flex;
+
+  &_arrow {
+    border: 1px solid $dark_shade_25;
+    box-sizing: border-box;
+    background: $white;
+    border-left-style: hidden;
+    border-radius: 0px 4px 4px 0px;
+  }
+}
+.material-icons_arrow {
+  background: linear-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#bc9cff),
+    to(#8ba4f9)
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#bc9cff),
+    to(#8ba4f9)
+  );
+  background: -moz-linear-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#bc9cff),
+    to(#8ba4f9)
+  );
+  //180deg, #bc9cff 0%, #8ba4f9 100%
+
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+//dropdown with count
+.iqdropdown {
+  padding: 0;
+  margin: 0;
+  max-width: 320px;
+  width: 100%;
+  border: 1px solid $dark_shade_25;
+  font-family: "Conv_Montserrat-Regular";
+}
+
+.iqdropdown-selection {
+  padding: 0.25rem;
+  font-family: "Conv_Montserrat-Regular";
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  color: $dark_shade_75;
+}
+//dropdown with calendar
+.datepicker-here {
+  @extend .input;
+}

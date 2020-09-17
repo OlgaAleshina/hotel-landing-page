@@ -1,9 +1,26 @@
+mixin form-element(labelLeft, labelRight)
+    div.element
+        div.element__label
+            label.h3 #{labelLeft}
+            label.h3.element__label_mute #{labelRight}
+            
+
 section.elements-section
     article
-        include text-input/text-input
-        include dropdown/dropdown
-        +text-input("text-field", "default", "default-input", "e-mail", "Email") 
-        +text-input("text-field", "hoover/focus", "focused-input", "text", "This is pretty awesome")
-        +dropdown(" ", "сколько гостей")
-        +text-input("masked text field", "default", "" , "date", "")
-        include date-dropdown/date-dropdown
+        include input/input
+        +form-element("text-field", "default") 
+        +text-input("default-input","e-mail", "Email")
+        +form-element("text-field", "hoover/focus")
+        +text-input("focused-input", "text", "This is pretty awesome")
+        +form-element("dropdown", "default")
+        +dropdown(" ", "Сколько гостей")
+        +form-element("masked text field", "default")
+        +text-input( "" , "date", "")
+        +form-element("date dropdown", "")
+        +date-dropdown("id", "ДД.ММ.ГГГГ")
+        +form-element("date dropdown", "")
+        +date-dropdown
+        +form-element("filter date dropdown", "")
+        +date-dropdown
+        +form-element("subscription text field", '')
+        +text-input

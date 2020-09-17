@@ -52,6 +52,7 @@ Deployed on Githubpages
 - [pixelPerfect]() - google chrome extension
 - [font2web](http://www.font2web.com/) - online fonts converter
 - [item-quantity-dropdown](https://www.npmjs.com/package/item-quantity-dropdown) - Dropdown menu to select items with quantities
+- [air-datepicker](https://www.npmjs.com/package/air-datepicker) - jQuery datepicker
 
 - outline of inputs (defaul, onhover)
 - format calendar in input

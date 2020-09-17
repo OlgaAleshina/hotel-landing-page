@@ -7,8 +7,9 @@
 @import "components/colors";
 @import "components/grid";
 @import "components/color-types/color-types.scss";
-@import "components/form-elements/text-input/text-input.scss";
-@import "components/form-elements/dropdown/dropdown.scss";
+@import "components/form-elements/form-elements.scss";
+@import "components/form-elements/input/input.scss";
+
 // _normalize.scss
 body,
 html {
