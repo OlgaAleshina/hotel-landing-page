@@ -120,6 +120,15 @@
   color: $dark_shade_75;
 }
 //dropdown with calendar
+.date-dropdown_sm {
+  max-width: 155px;
+  width: 45%;
+}
+.date-dropdown_md {
+  max-width: 200px;
+  width: 75%;
+}
+
 .datepicker-here {
   @extend .input;
 }

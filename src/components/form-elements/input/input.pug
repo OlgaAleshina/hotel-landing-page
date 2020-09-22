@@ -1,15 +1,20 @@
 mixin text-input(name, type, placeholder, size)
   input(type= type name= name class="input" placeholder= placeholder)   
 
-mixin dropdown(dropdownId, inputText, dropdownMenuId, options)
-  div.iqdropdown
-    p.iqdropdown-selection(id=`${dropdownId}`) #{inputText}
+mixin dropdown(inputText, dropdownId, dropdownSelectionId, dropdownMenuId, ...options)
+  div.iqdropdown(id=`${dropdownId}`)
+    p.iqdropdown-selection(id=`${dropdownSelectionId}`) #{inputText}
       div.iqdropdown-menu(id=`${dropdownMenuId}`)
-        each val in [options]
-          div.iqdropdown-menu-option(data-id= option)
+        each val in options
+          div.iqdropdown-menu-option(data-id= val)
             div 
-              p.iqdropdown-item= option  
+              p.iqdropdown-item= val  
 
 mixin date-dropdown(id , placeholder)
-  div.date-dropdown
+  div.date-dropdown__md
       input.datepicker-here(type='text' id= id placeholder= placeholder)
+
+mixin date-dropdown_double(id1 , placeholder1, id2 , placeholder2)
+  div.date-dropdown__sm
+      input.datepicker-here(type='text' id= id1 placeholder= placeholder1)
+      input.datepicker-here(type='text' id= id2 placeholder= placeholder2)

@@ -4,11 +4,22 @@ import "node_modules/air-datepicker/dist/js/datepicker.min.js";
 //options.selectionText = "взрослые";
 
 $(document).ready(function() {
-  $("#guests-number").click(function() {
-    $("#guests-number-menu").show();
+  $("#guests-dropdown__selection").click(function() {
+    $("#guests-dropdown__menu").toggle();
   });
 });
 
+$(document).ready(function() {
+  $("#guests-dropdown").iqDropdown(["option1", "option2"]);
+});
+
+$("#my-datepicker").datepicker({
+  navTitles: {
+    days: "<h3>Check in date:</h3> MM, yyyy"
+  }
+});
+
+//datepicker.date = new Date();
 /*$(document).ready(() => {
     $('.iqdropdown').iqDropdown({ [options] });
   });*/

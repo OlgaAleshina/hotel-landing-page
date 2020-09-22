@@ -1,3 +1,6 @@
+- const todaysDate = `${new Date().getDate()}.${new Date().getMonth()}.${new Date().getFullYear()}`;
+- const guestsDropdownOptions = ["optionA", "optionB"]
+
 mixin form-element(labelLeft, labelRight)
     div.element
         div.element__label
@@ -13,13 +16,12 @@ section.elements-section
         +form-element("text-field", "hoover/focus")
         +text-input("focused-input", "text", "This is pretty awesome")
         +form-element("dropdown", "default")
-        +dropdown(" ", "Сколько гостей")
+        +dropdown("Сколько гостей", "guests-dropdown" , "guests-dropdown__selection", "guests-dropdown__menu", "optionA", "optionB" )
         +form-element("masked text field", "default")
         +text-input( "" , "date", "")
-        +form-element("date dropdown", "")
-        +date-dropdown("id", "ДД.ММ.ГГГГ")
-        +form-element("date dropdown", "")
-        +date-dropdown
+        +form-element("date dropdown", "") 
+        +date-dropdown_double("id", "ДД.ММ.ГГГГ", "my-datepicker", todaysDate)
+        
         +form-element("filter date dropdown", "")
         +date-dropdown
         +form-element("subscription text field", '')
