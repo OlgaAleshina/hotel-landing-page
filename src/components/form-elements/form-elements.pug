@@ -1,7 +1,7 @@
 - const todaysDate = `${new Date().getDate()}.${new Date().getMonth()}.${new Date().getFullYear()}`;
 - const guestsDropdownOptions = ["optionA", "optionB"]
 
-mixin form-element(labelLeft, labelRight)
+mixin form-element__label(labelLeft, labelRight)
     div.element
         div.element__label
             label.h3 #{labelLeft}
@@ -11,18 +11,26 @@ mixin form-element(labelLeft, labelRight)
 section.elements-section
     article
         include input/input
-        +form-element("text-field", "default") 
+        +form-element__label("text-field", "default") 
         +text-input("default-input","e-mail", "Email")
-        +form-element("text-field", "hoover/focus")
+        +form-element__label("text-field", "hoover/focus")
         +text-input("focused-input", "text", "This is pretty awesome")
-        +form-element("dropdown", "default")
+        +form-element__label("dropdown", "default")
         +dropdown("Сколько гостей", "guests-dropdown" , "guests-dropdown__selection", "guests-dropdown__menu", "optionA", "optionB" )
-        +form-element("masked text field", "default")
+        +form-element__label("masked text field", "default")
         +text-input( "" , "date", "")
-        +form-element("date dropdown", "") 
+        +form-element__label("date dropdown", "date dropdown") 
         +date-dropdown_double("id", "ДД.ММ.ГГГГ", "my-datepicker", todaysDate)
         
-        +form-element("filter date dropdown", "")
+        +form-element__label("filter date dropdown", "")
         +date-dropdown
-        +form-element("subscription text field", '')
+        +form-element__label("subscription text field", '')
         +text-input
+    
+    article        
+        +form-element__label("checkbox buttons")
+        include checkbox/checkbox
+        +checkbox-list("checkboxId", "можно курить", "можно с питомцами", "можно пригласить гостей (до 10 человек)")
+    
+    article
+        +form-element__label("buttons")

@@ -1,0 +1,9 @@
+mixin checkbox-list(id, ...items)
+    each item in items
+        div.checkbox-list
+        label.checkbox-list__item #{item}
+            input.checkbox-list__item__input(type="checkbox" checked="checked" value= `${item}`)
+            span.checkbox-list__item__checkmark
+
+
+        
