@@ -1,0 +1,81 @@
+@mixin disabled {
+  opacity: 0.5;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.14rem;
+  min-width: 7.07rem;
+  height: 3.14rem;
+  border-radius: 1.57rem;
+  border: none;
+  background: $primary_gradient;
+
+  &__text {
+    color: $white;
+  }
+}
+.btn:hover {
+  cursor: pointer;
+  @include disabled;
+}
+.btn:focus {
+  outline: none;
+  background: $primary_gradient;
+  @include disabled;
+}
+
+//use @mixin text-color($color) {color: $color}
+
+.btn_disabled {
+  @include disabled;
+}
+.btn-outline {
+  &__inner {
+    display: inline-flex;
+    //position:absolute;
+    justify-content: center;
+    background: $white;
+    border-radius: 1.57rem;
+    min-width: 7rem;
+    height: 2.87rem;
+    //z-index: 1;
+    text-align: center;
+  }
+  &__text {
+    color: $purple;
+  }
+}
+.btn-light {
+  background: $white;
+  outline: none;
+  border: none;
+
+  &__text {
+    color: $purple;
+  }
+}
+.btn-light:focus {
+  background: inherit;
+  @include disabled;
+}
+
+.btn-light:hover {
+  background: inherit;
+  @include disabled;
+}
+
+.btn-large {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  //justify-content: space-evenly;
+
+  &__text {
+    flex-grow: 1;
+    //padding: 2em;
+  }
+}

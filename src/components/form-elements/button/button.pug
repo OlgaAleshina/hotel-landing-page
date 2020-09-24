@@ -1,0 +1,16 @@
+mixin button(text, disabled)
+    button.btn(class=disabled ? "btn_disabled" : "")
+        p.h3.btn__text #{text}
+
+mixin button-outline(text, disabled)
+    button.btn(class=disabled ? "btn_disabled" : "")
+        div.btn-outline__inner
+            p.h3.btn-outline__text #{text}
+
+mixin button-light(text, disabled)
+    button.btn-light(class=disabled ? "btn_disabled" : "")
+        p.h3.btn-light__text #{text}
+
+
+
+              

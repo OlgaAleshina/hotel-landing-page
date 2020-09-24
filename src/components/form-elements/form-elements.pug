@@ -6,11 +6,25 @@ mixin form-element__label(labelLeft, labelRight)
         div.element__label
             label.h3 #{labelLeft}
             label.h3.element__label_mute #{labelRight}
-            
 
+mixin button-group(type)
+    div.button-group
+        case type
+            when "outline"
+                +button-outline("click me", false)
+                +button-outline("click me", true)
+            when "regular"
+                +button("click me", false)
+                +button("click me", true)
+            when "light"
+                +button-light("click me", false)
+                +button-light("click me", true)
+
+include input/input
+include checkbox/checkbox           
+include button/button
 section.elements-section
-    article
-        include input/input
+    article        
         +form-element__label("text-field", "default") 
         +text-input("default-input","e-mail", "Email")
         +form-element__label("text-field", "hoover/focus")
@@ -20,17 +34,19 @@ section.elements-section
         +form-element__label("masked text field", "default")
         +text-input( "" , "date", "")
         +form-element__label("date dropdown", "date dropdown") 
-        +date-dropdown_double("id", "ДД.ММ.ГГГГ", "my-datepicker", todaysDate)
-        
+        +date-dropdown_double("id", "ДД.ММ.ГГГГ", "my-datepicker", todaysDate)        
         +form-element__label("filter date dropdown", "")
         +date-dropdown
         +form-element__label("subscription text field", '')
         +text-input
     
     article        
-        +form-element__label("checkbox buttons")
-        include checkbox/checkbox
+        +form-element__label("checkbox buttons")        
         +checkbox-list("checkboxId", "можно курить", "можно с питомцами", "можно пригласить гостей (до 10 человек)")
     
     article
-        +form-element__label("buttons")
+        +form-element__label("buttons")        
+        +button-group("regular")
+        +button-group("outline")
+        +button-group("light")
+        

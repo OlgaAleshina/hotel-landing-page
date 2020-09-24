@@ -12,3 +12,10 @@
     color: $dark_shade_50;
   }
 }
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 160px 5px 0px;
+  //padding: 0.36rem 11.43rem 0.36rem 0x;
+}
