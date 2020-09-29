@@ -40,7 +40,7 @@ npm start
 
 ## Deployment
 
-Deployed on Githubpages
+Deployed on [Githubpages](https://olgaaleshina.github.io/hotel-landing-page/)
 
 ## Built With
 
