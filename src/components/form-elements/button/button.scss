@@ -67,15 +67,17 @@
   @include disabled;
 }
 
-.btn-large {
-  width: 80%;
-  display: flex;
-  justify-content: flex-end;
-  padding: 1em;
-  //justify-content: space-evenly;
+.btn-arrow {
+  width: 100%;
+  max-width: 22.86rem;
 
   &__text {
     flex-grow: 1;
-    //padding: 2em;
+    color: $white;
+  }
+
+  &__icon {
+    color: $white;
+    padding: 0.5rem;
   }
 }

@@ -11,6 +11,10 @@ mixin button-light(text, disabled)
     button.btn-light(class=disabled ? "btn_disabled" : "")
         p.h3.btn-light__text #{text}
 
+mixin button-arrow(text)
+    button.btn.btn-arrow
+        p.h3.btn-arrow__text #{text}
+        span.material-icons.btn-arrow__icon arrow_forward
 
 
               
