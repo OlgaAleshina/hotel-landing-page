@@ -40,7 +40,7 @@ npm start
 
 ## Deployment
 
-Deployed on Githubpages
+Deployed on [Githubpages]
 
 ## Built With
 
